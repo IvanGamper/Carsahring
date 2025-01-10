@@ -9,7 +9,7 @@ cars = [
 
 template_dir = os.path.abspath("C:/Users/ivang/carsharing_backend/templates")
 app = Flask(__name__, template_folder=template_dir)
-# Route für die Startseite
+
 @app.route('/')
 def home():
     return render_template('index.html')
