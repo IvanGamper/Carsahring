@@ -5,7 +5,7 @@
     <script>
         async function loadCars() {
             const response = await fetch('/cars');
-            const cars = await response.json();
+            const cars = await fresponse.json();
             const carList = document.getElementById('car-list');
             carList.innerHTML = cars.map(car =>
                 `<li>${car.brand} ${car.model} - Available: ${car.available}</li>`
