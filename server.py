@@ -12,7 +12,7 @@ app = Flask(__name__, template_folder=template_dir)
 # Route für die Startseite
 @app.route('/')
 def home():
-    return render_template('index.html')  # Lädt die index.html im templates-Ordner
+    return render_template('index.html')
 
 @app.route('/cars', methods=['GET'])
 def get_cars():
